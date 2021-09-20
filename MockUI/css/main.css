@@ -1,0 +1,116 @@
+html,body{
+    height: 100%;
+    margin:0;
+    background-color: rgb(206, 220, 238);
+}
+
+.notes{
+    display: flex;
+    height: 100%;
+}
+
+
+.notes *{
+    font-family: sans-serif;
+}
+
+.notes-sidebar{
+    text-align: center;
+    border-right: 1px solid grey;
+    background-color: rgb(245, 243, 140);
+    font-size: 20px;
+    flex-shrink: 0;
+    overflow-y: auto;
+    width: 200px;
+}
+
+.notes-sidebar p{  
+    font-size: 22px; 
+    word-spacing: 4em;
+}
+
+.notes-add{
+    background-color: rgb(245, 243, 140);
+    border: none;
+    cursor: pointer;
+    font-size: 1.25em;
+    border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+}
+
+
+.notes-list{
+    
+    cursor: pointer;
+}
+
+.notes-list-item--selected{
+    background-color:  rgb(206, 220, 238);
+    font-weight: bold;
+}
+
+.notes-small-title{
+    font-size: 1em;
+    padding-top: 20px;
+    /* background-color: rgb(245, 243, 140); */
+    border-top: 1px solid rgb(241, 206, 6);
+    border-bottom: 1px solid rgb(241, 206, 6);
+}
+
+.notes-preview{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+
+.notes-title, .notes-body{
+    border: none;
+    outline: none;
+}
+
+.notes-preview input {
+    background-color:  rgb(206, 220, 238);
+}
+
+.notes-preview textarea {
+    /* background-color:  rgb(206, 220, 238); */
+    width: 800px;
+    height: 30px;
+}
+
+.notes-time{
+    font-style: italic;
+    color: grey;
+    position: absolute;
+    right: 160px;
+    top: 20px;
+}
+
+.notes-title{
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+.notes-body{
+    flex-grow: 1;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-top: 1em;
+   /* 0 resize: none; */
+}
+
+.notes-delete{
+    border: none;
+    margin: 20px 0px 0px 330px;
+    background-color: red;
+    width: 80px;
+    padding: 1em;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    
+}
+
